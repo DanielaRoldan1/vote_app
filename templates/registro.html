@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="mb-4">Registro de Usuario</h2>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger mb-3">Cerrar sesión</a>
+    {% with mensajes = get_flashed_messages(with_categories=true) %}
+      {% if mensajes %}
+        {% for categoria, mensaje in mensajes %}
+          <div class="alert alert-{{ categoria }} alert-dismissible fade show" role="alert">
+            {{ mensaje }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form method="post" class="card card-body needs-validation" novalidate>
+      <div class="mb-3">
+        <label>ID Accionista</label>
+        <input type="text" name="id_usuario" class="form-control" required pattern="^[A-Za-z0-9]+$" minlength="3" maxlength="20">
+        <div class="invalid-feedback">Ingrese un ID válido (solo letras y números, 3-20 caracteres).</div>
+      </div>
+      <div class="mb-3">
+        <label>Nombre</label>
+        <input type="text" name="nombre" class="form-control" required minlength="2" maxlength="50" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$">
+        <div class="invalid-feedback">Ingrese un nombre válido (solo letras, mínimo 2 caracteres).</div>
+      </div>
+      <div class="mb-3">
+        <label>Contraseña</label>
+        <input type="password" name="password" class="form-control" required minlength="6">
+        <div class="invalid-feedback">La contraseña debe tener al menos 6 caracteres.</div>
+      </div>
+      <div class="mb-3">
+        <label>Dirección</label>
+        <input type="text" name="direccion" class="form-control" maxlength="100" required>
+        <div class="invalid-feedback">Ingrese una dirección.</div>
+      </div>
+      <div class="mb-3">
+        <label>Teléfono</label>
+        <input type="text" name="telefono" class="form-control" required pattern="^[0-9\-\+\s]{7,15}$">
+        <div class="invalid-feedback">Ingrese un teléfono válido (7-15 dígitos, puede incluir y -).</div>
+      </div>
+      <div class="mb-3">
+        <label>Tipo de usuario</label>
+        <select name="tipo_usuario" class="form-select" required>
+          <option value="">Seleccione...</option>
+          <option>Persona</option>
+          <option>Empresa</option>
+          <option>Administrador</option>
+        </select>
+        <div class="invalid-feedback">Seleccione un tipo de usuario.</div>
+      </div>
+      <button class="btn btn-success" type="submit">Registrar</button>
+    </form>
+  </div>
+<script>
+  // Bootstrap validation en tiempo real y bloqueo de caracteres especiales
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      // Validación en tiempo real para cada input/select
+      const fields = form.querySelectorAll('input, select, textarea');
+      fields.forEach(field => {
+        field.addEventListener('input', () => {
+          field.classList.toggle('is-invalid', !field.checkValidity());
+          field.classList.toggle('is-valid', field.checkValidity());
+        });
+        field.addEventListener('change', () => {
+          field.classList.toggle('is-invalid', !field.checkValidity());
+          field.classList.toggle('is-valid', field.checkValidity());
+        });
+      });
+
+      // Validación en submit
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+
+      // Bloquear caracteres especiales en ID Accionista
+      const idInput = form.querySelector('input[name="id_usuario"]');
+      if (idInput) {
+        idInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^A-Za-z0-9]/g, '');
+        });
+      }
+
+      // Bloquear caracteres especiales en Nombre (solo letras y espacios)
+      const nombreInput = form.querySelector('input[name="nombre"]');
+      if (nombreInput) {
+        nombreInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]/g, '');
+        });
+      }
+
+      // Bloquear caracteres no permitidos en Teléfono (solo números, espacios, + y -)
+      const telInput = form.querySelector('input[name="telefono"]');
+      if (telInput) {
+        telInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^0-9\-\+\s]/g, '');
+        });
+      }
+    });
+  })();
+</script>
+</body>
+</html>

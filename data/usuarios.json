@@ -1,0 +1,63 @@
+{
+    "1000763443": {
+        "nombre": "Mateo",
+        "direccion": "Cra 12",
+        "telefono": "3058712932",
+        "correo": "mateo@prueba.com",
+        "tipo": "Persona",
+        "password": "123456"
+    },
+    "1234567890": {
+        "nombre": "Admin",
+        "direccion": "Cra 20",
+        "telefono": "3009036781",
+        "correo": "admin@prueba.com",
+        "tipo": "Administrador",
+        "password": "123456"
+    },
+    "1017195100": {
+        "nombre": "Duban",
+        "direccion": "Cra 10",
+        "telefono": "3217585963",
+        "correo": "duban@prueba.com",
+        "tipo": "Empresa",
+        "password": "123456"
+    },
+    "43114911": {
+        "nombre": "Liliana",
+        "direccion": "Cra 30",
+        "telefono": "3333333",
+        "correo": "lili@prueba.com",
+        "tipo": "Persona",
+        "password": "123456"
+    },
+    "admin": {
+        "nombre": "Liza",
+        "direccion": "cr 32",
+        "telefono": "3485945",
+        "correo": "Liza@correo.co",
+        "tipo": "Persona",
+        "password": "123456"
+    },
+    "32296962": {
+        "nombre": "Erika",
+        "password": "123456",
+        "direccion": "cra 50",
+        "telefono": "3207074874",
+        "tipo": "Persona"
+    },
+    "123456": {
+        "nombre": "pruebaweb",
+        "password": "1234567",
+        "direccion": "casa ",
+        "telefono": "3325522",
+        "tipo": "Empresa"
+    },
+    "43114912": {
+        "nombre": "prueba uno",
+        "password": "1234567",
+        "direccion": "casa ",
+        "telefono": "3325522",
+        "tipo": "Persona"
+    }
+}

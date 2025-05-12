@@ -1,0 +1,106 @@
+{
+    "41956c1a-c41a-471a-a93e-2b7bf07cd5d9": {
+        "texto": "¿Aprueba los estados financieros del ejercicio fiscal del año anterior?",
+        "estado": "cerrada",
+        "fecha": "2025-04-17 17:33:30",
+        "resultados": {
+            "Apruebo": 2,
+            "No apruebo": 1,
+            "Me abstengo": 0,
+            "Voto en blanco": 1
+        }
+    },
+    "977b6a8c-fd8a-4d38-86cc-f140d1cd12f5": {
+        "texto": "¿Autoriza las modificaciones sugeridas en los estatutos de la compañía?",
+        "estado": "cerrada",
+        "fecha": "2025-04-17 17:23:57",
+        "resultados": {
+            "Apruebo": 0,
+            "No apruebo": 2,
+            "Me abstengo": 0,
+            "Voto en blanco": 0
+        }
+    },
+    "12d691ee-4775-40fc-8180-2c6a91d91a9b": {
+        "texto": "¿Está de acuerdo con el ajuste salarial propuesto para la alta dirección?",
+        "estado": "cerrada",
+        "fecha": "2025-04-17 17:30:31",
+        "resultados": {
+            "Apruebo": 0,
+            "No apruebo": 1,
+            "Me abstengo": 1,
+            "Voto en blanco": 2
+        }
+    },
+    "9b4c969b-4dc7-4c63-91f2-ea3389522984": {
+        "texto": "¿Está de acuerdo con la reelección de los miembros de la junta directiva?",
+        "estado": "cerrada",
+        "fecha": "2025-04-18 11:01:51",
+        "resultados": {
+            "Apruebo": 1,
+            "No apruebo": 2,
+            "Me abstengo": 0,
+            "Voto en blanco": 1
+        }
+    },
+    "d00f3cdc-31a1-4148-a9e3-e21738a65919": {
+        "Apruebo": 0,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "4b0160a2-1917-44a8-b938-d2ed5aab7b93": {
+        "Apruebo": 1,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "b7982608-77aa-46eb-8798-2d0788a4cf8c": {
+        "Apruebo": 0,
+        "No apruebo": 1,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "bc9e3e3f-be1c-469c-bbe3-a19a8904f8c1": {
+        "Apruebo": 1,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "93b4b451-d1c2-43d8-bf84-040d2616d436": {
+        "Apruebo": 0,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "07544362-03cc-4c08-ab90-c020b9962718": {
+        "Apruebo": 0,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "6275f865-21cb-44b4-a8c1-d18e74186c94": {
+        "Apruebo": 1,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "45536d53-b34e-48d1-84a8-86ce627a414f": {
+        "Apruebo": 0,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "0767153a-c144-4c56-93c0-346575eb115a": {
+        "Apruebo": 1,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    },
+    "fff8f975-b622-4d3a-ab13-97982af8801a": {
+        "Apruebo": 0,
+        "No apruebo": 0,
+        "Me abstengo": 0,
+        "Voto en blanco": 0
+    }
+}
